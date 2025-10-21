@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HobbyBox - Monthly Mystery Hobby Subscription</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-purple-50 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-12 md:py-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="relative inline-block mb-8">
+                <div class="w-48 h-48 md:w-64 md:h-64 bg-white rounded-2xl shadow-xl flex items-center justify-center mx-auto rotate-6 transform hover:rotate-12 transition-transform duration-500">
+                    <div class="w-40 h-40 md:w-56 md:h-56 bg-gradient-to-br from-pink-500 to-lightpink-100 rounded-xl flex items-center justify-center">
+                        <i data-feather="box" class="w-24 h-24 text-white"></i>
+                        <span class="absolute -top-4 -right-4 bg-orange-300 text-pink-500 rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold">?</span>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-pink-400 mb-6 font-rubik">
+                جرب هواية جديدة 
+                <span class="text-orange-300">شهريًا</span>
+            </h1>
+            
+            <p class="text-lg md:text-1.5xl text-blue-300 mb-10 max-w-2xl mx-auto">
+              صناديق غامضة شهرية مليئة بكل ما تحتاجه لتجربة هواية جديدة
+                  الطبخ، الرسم، البستنة، أو الألعاب الجماعية - فاجئ نفسك
+            </p>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 max-w-md mx-auto mb-12">
+                <h2 class="text-2xl font-bold text-orange-300 mb-4">كل شهر هواية جديدة بانتظارك</h2>
+                <form class="space-y-4">
+                    <input type="email" placeholder="Your email" class="w-full px-4 py-3 rounded-lg border border-purple-200 focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-lightpink-200 text-white font-bold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300">
+                        استمتع بالتجربة الآن
+                    </button>
+                </form>
+            </div>
+
+            <div class="mt-16">
+                <h3 class="text-xl font-semibold text-blue-300 mb-4">شارك في الاستبيان لمساعدتنا على تحسين منتجاتنا</h3>
+                <a href="https://forms.cloud.microsoft/r/vNLkM8Lhs6" class="inline-block bg-orange-300 text-black-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-300 transition-colors">
+                    <i data-feather="clipboard" class="inline mr-2"></i> الاستبيان
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-rubik {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Animation for the mystery box */
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(6deg); }
+    50% { transform: translateY(-10px) rotate(12deg); }
+}
+
+.hover\:float:hover {
+    animation: float 3s ease-in-out infinite;
+}
